@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <style>
         #map {
-            width: 1400px;
-            height: 700px;
+            width: 1653px;
+            height: 788px;
         }
         </style>
         <title></title>
@@ -81,49 +81,13 @@
         function pop_otaru_flickrp_2010_2019_u54w_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['field_1'] !== null ? autolinker.link(feature.properties['field_1'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['accuracy'] !== null ? autolinker.link(feature.properties['accuracy'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['context'] !== null ? autolinker.link(feature.properties['context'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['datetaken'] !== null ? autolinker.link(feature.properties['datetaken'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['datetakeng'] !== null ? autolinker.link(feature.properties['datetakeng'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['datetakenu'] !== null ? autolinker.link(feature.properties['datetakenu'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['farm'] !== null ? autolinker.link(feature.properties['farm'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['geo_is_con'] !== null ? autolinker.link(feature.properties['geo_is_con'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['geo_is_fam'] !== null ? autolinker.link(feature.properties['geo_is_fam'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['geo_is_fri'] !== null ? autolinker.link(feature.properties['geo_is_fri'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['geo_is_pub'] !== null ? autolinker.link(feature.properties['geo_is_pub'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['height_n'] !== null ? autolinker.link(feature.properties['height_n'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['isfamily'] !== null ? autolinker.link(feature.properties['isfamily'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['isfriend'] !== null ? autolinker.link(feature.properties['isfriend'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['ispublic'] !== null ? autolinker.link(feature.properties['ispublic'].toLocaleString()) : '') + '</td>\
@@ -132,22 +96,10 @@
                         <td colspan="2">' + (feature.properties['latitude'] !== null ? autolinker.link(feature.properties['latitude'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['license'] !== null ? autolinker.link(feature.properties['license'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['longitude'] !== null ? autolinker.link(feature.properties['longitude'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['owner'] !== null ? autolinker.link(feature.properties['owner'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['place_id'] !== null ? autolinker.link(feature.properties['place_id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['secret'] !== null ? autolinker.link(feature.properties['secret'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['server'] !== null ? autolinker.link(feature.properties['server'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['title'] !== null ? autolinker.link(feature.properties['title'].toLocaleString()) : '') + '</td>\
@@ -157,12 +109,6 @@
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['views'] !== null ? autolinker.link(feature.properties['views'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['width_n'] !== null ? autolinker.link(feature.properties['width_n'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['woeid'] !== null ? autolinker.link(feature.properties['woeid'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
